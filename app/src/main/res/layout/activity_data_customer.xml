@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.contact.us.DataCustomerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logopng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.contact.us.component.NonBlankEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                android:drawableEnd="@drawable/ic_account"
+                android:drawableTint="@color/blue"
+                android:hint="Nama Lengkap"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <com.contact.us.component.NonBlankEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                android:drawableEnd="@drawable/ic_account"
+                android:drawableTint="@color/blue"
+                android:hint="Username"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <com.contact.us.component.NonBlankEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawableTint="@color/blue"
+                android:hint="Email"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <com.contact.us.component.NonBlankEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                android:drawableEnd="@drawable/ic_password"
+                android:drawableTint="@color/blue"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <com.contact.us.component.NonBlankEditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                android:drawableEnd="@drawable/ic_tanggal"
+                android:drawableTint="@color/blue"
+                android:focusable="false"
+                android:hint="Tanggal Lahir"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_button_transparant">
+
+                <com.contact.us.component.NonBlankSpinner
+                    android:id="@+id/spGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/jenis_kelamin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--                <RadioGroup-->
+                <!--                    android:id="@+id/rgJenisKelamin"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    android:layout_marginBottom="8dp"-->
+                <!--                    android:layout_marginTop="8dp"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <RadioButton-->
+                <!--                        android:id="@+id/pria"-->
+                <!--                        android:layout_width="0px"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_weight="10"-->
+                <!--                        android:text="Pria"-->
+                <!--                        android:buttonTint="@color/blue"-->
+                <!--                        android:checked="true"/>-->
+
+                <!--                    <RadioButton-->
+                <!--                        android:id="@+id/wanita"-->
+                <!--                        android:layout_width="0px"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_weight="10"-->
+                <!--                        android:text="Wanita"-->
+                <!--                        android:buttonTint="@color/blue"/>-->
+
+                <!--                </RadioGroup>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/tvFotoProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Foto Profile"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cvFotoBarang"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_button_transparant"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/ivFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:id="@+id/ivAddImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_photo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:tint="@color/blue" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_button"
+                android:text="submit"
+                app:backgroundTint="@color/blue" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

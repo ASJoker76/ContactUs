@@ -1,0 +1,25 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.contact.us.fragment.BerandaFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbAddTask"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_add"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

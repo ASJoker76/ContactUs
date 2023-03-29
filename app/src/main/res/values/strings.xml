@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ContactUs</string>
+    <string name="can_not_be_empty">can not be empty</string>
+    <string name="errorEmpty">This field is required!</string>
+    <string name="errorEmail">Please use valid email</string>
+    <string name="currency_prefix">Rp</string>
+
+    <string-array name="jenis_kelamin">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
